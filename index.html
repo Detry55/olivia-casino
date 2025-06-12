@@ -63,14 +63,14 @@
     .button:hover {
       background: #1e7e34;
     }
-
     .nav-menu {
       list-style: none;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       padding: 0;
-      margin: 10px 0;
+      margin: 0;
+      background-color: #003f73;
     }
 
     .nav-menu li {
@@ -81,14 +81,16 @@
       color: white;
       text-decoration: none;
       font-weight: bold;
-      padding: 8px 12px;
-      border-radius: 5px;
-      transition: background 0.3s;
+      padding: 12px 16px;
+      display: inline-block;
+      transition: background 0.3s ease;
     }
 
     .nav-menu a:hover {
-      background-color: #003f73;
+      background-color: #005b9f;
+      border-radius: 5px;
     }
+
 
     section {
       background-color: #000;
@@ -136,6 +138,14 @@
   <header>
     <h1>OLIVIA MULLER GAMING CASINO</h1>
   </header>
+  <nav>
+  <ul class="nav-menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#games">Games</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
   <main>
     <img src="orion.jpg" alt="Me">
