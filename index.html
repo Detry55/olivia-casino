@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head id="home">
- <title>My Homepage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Homepage</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
@@ -19,127 +21,143 @@
       text-align: center;
     }
 
-    p {
-      margin: 0;
-      font-size: 20px;
+    main {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-   
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    p {
+      margin: 10px 0;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
     .social-buttons {
-      margin-top: 36px;
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
     }
 
     .button {
       background: #28a745;
       color: white;
       padding: 10px 20px;
-      margin: 10px;
       border: none;
       border-radius: 8px;
       font-size: 16px;
       text-decoration: none;
-      display: inline-block;
       transition: background 0.3s ease;
     }
 
     .button:hover {
-      background: #1e7e34
+      background: #1e7e34;
     }
 
-   .nav-menu {
+    .nav-menu {
       list-style: none;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      margin: 0;
       padding: 0;
+      margin: 10px 0;
     }
 
-   .nav-menu li {
-      margin: 0 15px;
+    .nav-menu li {
+      margin: 0 10px;
     }
 
-   .nav-menu a {
+    .nav-menu a {
       color: white;
       text-decoration: none;
       font-weight: bold;
       padding: 8px 12px;
-      transition: background 0.3s;
       border-radius: 5px;
+      transition: background 0.3s;
     }
 
-   .nav-menu a:hover {
+    .nav-menu a:hover {
       background-color: #003f73;
     }
 
     section {
       background-color: #000;
-      margin: 40px auto;
-      padding: 30px;
-      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 90%;
       border-radius: 10px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
     }
 
     section h2 {
-      color: #0077cc;
+      color: #00aaff;
       margin-bottom: 10px;
-      text-align: center;
     }
 
-
-
-
-
-
-
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #003f73;
+      color: white;
+    }
 
     html {
-       scroll-behavior: smooth;
-    }
-    main, section {
-       text-align: center;
+      scroll-behavior: smooth;
     }
 
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+        padding: 20px;
+      }
+
+      .button {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 <body>
-   <header>
+  <header>
     <h1>OLIVIA MULLER GAMING CASINO</h1>
   </header>
-    <nav>
-     <ul class="nav-menu">
-         <li><a href="#home">Home</a></li>
-         <li><a href="#about">About</a></li>
-         <li><a href="#contact">Contact</a></li>
-     </ul>
-</nav>
+
   <main>
     <img src="orion.jpg" alt="Me">
-    <img src="orion.jpg" alt="Me" style="max-width: 300px; border-radius: 10px; margin-top: 20px;">
-    <img src="orion.jpg" alt="Casino Banner or Olivia Gaming Logo">
+    <p>Welcome to Olivia Gaming Casino. The home of great Reels Casino and exclusive Bonuses!</p>
+    <p>Feel free to get started with us as your 100% legit gaming platform. LET'S ALL BEGIN!</p>
+    <p>We offer a variety of games. Keep checking back for updates!</p>
+    <p>You can also reach us through other social platforms:</p>
 
-    <p>Welcome to olivia gaming casino.The home of great Reels Casino and excluisive Bonuses</p>
-    <p>Feel free to get started with us as your 100% Legit gaming platform. LET'S ALL BEGIN!</p>
-
-    <p>WE OFFER a variety of games. Keep checking back for updates!</p>
-    <p>You can as well reach us through other social platforms</p>
-
-    <p>All are listed here. ENJOY!</p>
-    
     <div class="social-buttons">
-       <a href="https://www.facebook.com/profile.php?id=100064901654158" target="_blank" class="button">Facebook</a>
-       <a href="https://wa.me/16292598001" target="_blank" class="button">WhatsApp</a>
+      <a href="https://www.facebook.com/profile.php?id=100064901654158" target="_blank" class="button">Facebook</a>
+      <a href="https://wa.me/16292598001" target="_blank" class="button">WhatsApp</a>
     </div>
-    
+
     <section id="about">
-       <h2>About Me</h2>
-       <p>We are 100% legit casino operating since 2021!</p>
+      <h2>About Us</h2>
+      <p>We are a 100% legit casino operating since 2021!</p>
     </section>
 
     <section id="contact">
-       <h2>Contact</h2>
-       <p>You can reach me on WhatsApp or Facebook using the buttons above.</p>
+      <h2>Contact</h2>
+      <p>You can reach us on WhatsApp or Facebook using the buttons above.</p>
     </section>
-
   </main>
 
   <footer>
